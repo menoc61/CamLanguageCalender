@@ -12,7 +12,7 @@ form {
     flex-direction: column;
     align-items: center;
 }
-input[type="text"] {
+input[type="date"],input[type="text"] {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -43,7 +43,7 @@ select {
     box-sizing: border-box;
     margin-left: 10px;
 }
-button[type="submit"] {
+button[type="button"] {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
