@@ -34,16 +34,15 @@ const pidginWeekDays = {
   const dateInput = document.getElementById("dateInput");
   const languageSelect = document.getElementById("languageSelect");
   const resultsDiv = document.getElementById("results");
-  
   translateBtn.addEventListener("click", function(e) {
     e.preventDefault();
     if (usePidginCheckbox.checked) {
       const selectedPidgin = pidginSelect.value;
       const pidginDate = translateDateToPidgin(dateInput.value, selectedPidgin);
-      resultsDiv.innerHTML = `<p>${selectedPidgin} Pidgin: ${pidginDate}</p>`;
+      resultsDiv.innerHTML = `<div class="alert alert-success mt-3" role="alert">${selectedPidgin} Pidgin: ${pidginDate}</div>`;
     } else {
       const selectedLanguage = languageSelect.value;
       const translatedDate = translateToLanguage(dateInput.value, selectedLanguage);
-      resultsDiv.innerHTML = `<p>${selectedLanguage}: ${translatedDate}</p>`;
+      resultsDiv.innerHTML = `<div class="alert alert-info mt-3" role="alert">${selectedLanguage}: ${translatedDate}</div>`;
     }
   });
