@@ -9,16 +9,6 @@
     <form>
         <label for="dateInput">Enter a date in the format of day-month-year:</label>
         <input type="date" id="dateInput" name="dateInput" placeholder="dd-mm-yyyy">
-        <button type="button" id="translateBtn">Translate</button>
-        <br>
-        <label for="pidginSelect">Select a Cameroonian Pidgin dialect:</label>
-        <select id="pidginSelect" name="pidginSelect">
-          <option value="standard">Standard</option>
-          <option value="awunyi">Awunyi Pidgin</option>
-          <option value="bafaw">Bafaw Pidgin</option>
-          <option value="mbouda">Mbouda Pidgin</option>
-          <option value="ngumba">Ngumba Pidgin</option>
-        </select>
         <br>
         <label for="languageSelect">Select a language:</label>
         <select id="languageSelect" name="languageSelect">
@@ -33,6 +23,20 @@
           <option value="bn">Bengali</option>
           <option value="sw">Swahili</option>
         </select>
+        <br>
+        <label for="usePidgin">Use a Pidgin dialect:</label>
+        <input type="checkbox" id="usePidgin" name="usePidgin">
+        <br>
+        <label for="pidginSelect">Select a Cameroonian Pidgin dialect:</label>
+        <select id="pidginSelect" name="pidginSelect" disabled>
+          <option value="standard">Standard</option>
+          <option value="awunyi">Awunyi Pidgin</option>
+          <option value="bafaw">Bafaw Pidgin</option>
+          <option value="mbouda">Mbouda Pidgin</option>
+          <option value="ngumba">Ngumba Pidgin</option>
+        </select>
+        <br>
+        <button type="button" id="translateBtn">Translate</button>
       </form>
       <div id="results"></div>
 <script src="./index.js"></script>

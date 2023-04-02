@@ -24,17 +24,26 @@ const pidginWeekDays = {
     return dateObj.toLocaleDateString(languageCode, options);
   }
   
+  const usePidginCheckbox = document.getElementById("usePidgin");
+  const pidginSelect = document.getElementById("pidginSelect");
+  usePidginCheckbox.addEventListener("change", function() {
+    pidginSelect.disabled = !usePidginCheckbox.checked;
+  });
+  
   const translateBtn = document.getElementById("translateBtn");
   const dateInput = document.getElementById("dateInput");
   const languageSelect = document.getElementById("languageSelect");
-  const pidginSelect = document.getElementById("pidginSelect");
   const resultsDiv = document.getElementById("results");
   
   translateBtn.addEventListener("click", function(e) {
     e.preventDefault();
-    const selectedPidgin = pidginSelect.value;
-    const pidginDate = translateDateToPidgin(dateInput.value, selectedPidgin);
-    const selectedLanguage = languageSelect.value;
-    const translatedDate = translateToLanguage(dateInput.value, selectedLanguage);
-    resultsDiv.innerHTML = `<p>${selectedPidgin} Pidgin: ${pidginDate}</p><p>${selectedLanguage}: ${translatedDate}</p>`;
+    if (usePidginCheckbox.checked) {
+      const selectedPidgin = pidginSelect.value;
+      const pidginDate = translateDateToPidgin(dateInput.value, selectedPidgin);
+      resultsDiv.innerHTML = `<p>${selectedPidgin} Pidgin: ${pidginDate}</p>`;
+    } else {
+      const selectedLanguage = languageSelect.value;
+      const translatedDate = translateToLanguage(dateInput.value, selectedLanguage);
+      resultsDiv.innerHTML = `<p>${selectedLanguage}: ${translatedDate}</p>`;
+    }
   });
