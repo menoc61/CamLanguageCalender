@@ -1,6 +1,9 @@
 //databook
 const pidginWeekDays = {
+    //           -3          +2        0       -2        +3      +1      -1          -4    [TEST]   
+   // Bandjoun: ["Shyenku'u","Dzemto","Sêdzu","Dzedze","Ntamgo","Gossue","Ntamdze","Tye'pfô",],
   // starting on sunday index +1
+  //       +1         0           -1        -2             -3         -4          +3         +2
   Akum: ["Zingèné", "Zisàne", "Mbi'nè", "Nkwànyine", "Nzinkùne", "Mbyèghdùme", "Zinkàbe","Nkuifine"],
   Babadjou: ["Lepare","Shwi'i", "Mbhi'i","Nkap","Chore","Pombwo'o","Ncwi","Legho"],
   Bafang: ["Nkaatee","Lie'kwe'","Ntu'ntaa","Ntu'kwa","Nziso","Nzingu","Ncomtee","Ncwe'ko" ],
@@ -77,10 +80,10 @@ const pidginWeekDays = {
     if (usePidginCheckbox.checked) {
       const selectedPidgin = pidginSelect.value;
       const pidginDate = translateDateToPidgin(dateInput.value, selectedPidgin);
-      resultsDiv.innerHTML = `<div class="alert alert-success mt-3" role="alert">${selectedPidgin} Pidgin: ${pidginDate}</div>`;
-    } else {
-      const selectedLanguage = languageSelect.value;
-      const translatedDate = translateToLanguage(dateInput.value, selectedLanguage);
-      resultsDiv.innerHTML = `<div class="alert alert-info mt-3" role="alert">${selectedLanguage}: ${translatedDate}</div>`;
+      resultsDiv.innerHTML = `<div class="alert alert-success mt-3" role="alert">${selectedPidgin} Dialate: ${pidginDate}</div>`;
+      return;
     }
+    const selectedLanguage = languageSelect.value;
+    const translatedDate = translateToLanguage(dateInput.value, selectedLanguage);
+    resultsDiv.innerHTML = `<div class="alert alert-info mt-3" role="alert">${selectedLanguage}: ${translatedDate}</div>`;
   });

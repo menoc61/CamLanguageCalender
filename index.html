@@ -11,8 +11,8 @@
   </head>
   <body>
     <form class="container-sm p-5 my-5 border  was-validated justify-content-center">
-        <h1 class="h3 mb-3 font-weight-normal text-center">Dialate-Translator</h1>
-        <label for="dateInput" class="form-label sr-only">Enter a date in the format of day-month-year:</label>
+        <h1 class="h3 mb-3 font-weight-normal text-center text-bg-primary p-3">Dialate-Translator</h1>
+        <label for="dateInput" class="form-label sr-only">Enter a date: </label>
         <input type="date" id="dateInput" name="dateInput"  class="form-control" placeholder="dd-mm-yyyy" required>
         <br>
         <label for="languageSelect" class="form-label">Select a language [7day week]:</label>
@@ -29,9 +29,10 @@
           <option value="sw">Swahili</option>
         </select>
         <br>
-        <label for="usePidgin" class="form-label">Use a Pidgin dialect:</label>
+        <!-- <label for="usePidgin" class="form-label">Use a Pidgin dialect:</label>
+
+        <br> -->
         <input type="checkbox" id="usePidgin" name="usePidgin" class="form-check-input">
-        <br>
         <label for="pidginSelect" class="form-label">Select a Cameroonian dialect [8day week]:</label>
         <select id="pidginSelect" name="pidginSelect" class="form-control" disabled>
           <option value="Akum">Akum</option>
@@ -71,9 +72,7 @@
           <option value="Ngiembo'on1">Ngiembo'on1</option>
           <option value="Ngiembo'on2">Ngiembo'on2</option>
           <option value="Nguemba">Nguemba</option>
-          <option value="Yemba">Yemba</option> 				
-          																
-
+          <option value="Yemba">Yemba</option> 
 
         </select>
         <br>
