@@ -1,439 +1,400 @@
 //databook
 const pidginWeekDays = {
   Akum: [
-    "Zisàne",
-    "Zingèné",
-    "Nkuifine",
     "Zinkàbe",
-    "Mbyèghdùme",
-    "Nzinkùne",
-    "Nkwànyine",
+    "Nkuifine",
+    "Zingèné",
+    "Zisàne", //0
     "Mbi'nè",
+    "Nkwànyine",
+    "Nzinkùne",
+    "Mbyèghdùme",
   ],
-
   Babadjou: [
-    "Shwi'i",
-    "Lepare",
-    "Legho",
     "Ncwi",
-    "Pombwo'o",
-    "Chore",
-    "Nkap",
+    "Legho",
+    "Lepare",
+    "Shwi'i", //0
     "Mbhi'i",
+    "Nkap",
+    "Chore",
+    "Pombwo'o",
   ],
-
   Bafang: [
-    "Lie'kwe'",
-    "Nkaatee",
-    "Ncwe'ko",
     "Ncomtee",
-    "Nzingu",
-    "Nziso",
-    "Ntu'kwa",
+    "Ncwe'ko",
+    "Nkaatee",
+    "Lie'kwe'", //0
     "Ntu'ntaa",
-  ],
-
-  Bafou: [
-    "Mbouotchou",
-    "Effa",
-    "Djielah",
-    "Ngan",
-    "Mbouowa",
-    "Mbouolo",
-    "Me'ta",
-    "Mbouokeu",
-  ],
-
-  Bafoussam: [
-    "Seinchou",
-    "Ghossaha",
-    "Dzemteh",
-    "Dza' à Nlong",
-    "Lecfo'o",
-    "Shienku'u",
-    "Dzedze",
-    "Tamdze",
-  ],
-
-  Bagam: [
-    "Yentente",
-    "Yenkap",
-    "Yessi",
-    "Yenkessi",
-    "Yenkinze",
-    "Yepie'",
-    "Yenkopie'",
-    "Yengwie'",
-  ],
-
-  Baham: [
-    "Kuogwe",
-    "Gosue",
-    "Mamto",
-    "Tamgwe",
-    "Liepfô",
-    "Shanku'u",
-    "Dzedze",
-    "Tamdze",
-  ],
-
-  Bahouan: [
-    "Kuogwe",
-    "Gosue",
-    "Mamto",
-    "Temgwe",
-    "Lipfe",
-    "Shanku'u",
-    "Dzedze",
-    "Tamdze",
-  ],
-
-  Balengou: [
-    "Di'kong",
-    "Di'tcheu",
-    "Nguedjou",
-    "Dikap",
-    "Zegheu",
-    "Di'keuh",
-    "Zedjio",
-    "Di'mbou",
-  ],
-
-  Baloum: [
-    "Totsah",
-    "Fa'ah",
-    "Djeulah",
-    "Nga'ang",
-    "Bougwa'ah",
-    "Nzeundah",
-    "Djeudjeu",
-    "Metalou",
-  ],
-
-  Bamena: [
-    "Li'nkong",
-    "Ntassang",
-    "Nguendjou",
-    "Lih'kap",
-    "Nzeugueuh",
-    "Lih'tioh",
-    "Nzedjio",
-    "Nzeleng",
-  ],
-
-  Bamendjinda: [
-    "kateu",
-    "Kapot",
-    "Metagoué",
-    "Tsüre",
-    "Pobuo",
-    "Meta",
-    "Seugouè",
-    "Njeula",
-  ],
-
-  Bamendjou: [
-    "Mumete",
-    "Memete",
-    "Kuitsit",
-    "Pfessa",
-    "Pfessap",
-    "Nshyenda",
-    "Ndunshu",
-    "Djedjuku'u",
-  ],
-
-  Bamenyam: [
-    "Bizeu",
-    "Bissiène",
-    "Binewa",
-    "Bikak",
-    "Bièbeu",
-    "Bikuit",
-    "Bifoutgou",
-    "Bisset",
-  ],
-
-  Bandenkop: [
-    "Lie'kouon",
-    "Temgou",
-    "Lie'djou",
-    "Cheptèh",
-    "Kwogouèh",
-    "Nzessouh",
-    "Djeudjeu'",
-    "Lie'gang",
-  ],
-
-  Bandjoun: [
-    "Sêdzu",
-    "Gossue",
-    "Dzemto",
-    "Ntamgo",
-    "Tye'pfô",
-    "Shyenku'u",
-    "Dzedze",
-    "Ntamdze",
-  ],
-
-  Bangangté: [
-    "Nzinyam",
-    "Ntanbu'",
-    "Ntânte'",
-    "Ntanla'",
-    "Nsigha",
-    "Nsemte'",
-    "Nga",
-    "Nkôtu",
-  ],
-
-  Bangou: [
-    "Ndi'nkong",
-    "Tabété",
-    "Nguédjou",
-    "Ndi'nkapC",
-    "Nzeugheu",
-    "Nditouoh",
-    "Nzedjouoh",
-    "Nzeleng",
-  ],
-
-  Bangoua: [
-    "Lie Kouo",
-    "Nto'o Sak",
-    "Ngue Jou",
-    "Lie Tsoue",
-    "Lie Chak",
-    "Lie Ntio",
-    "Nze Nze",
-    "Lie Tchak",
-  ],
-
-  Bansoua: [
-    "Mumete",
-    "Memete",
-    "Kuitsit",
-    "Pfessa",
-    "Pfessap",
-    "Nshyenda",
-    "Ndunshu",
-    "Djedjuku'u",
-  ],
-
-  Batcham: [
-    "Cheatchie",
-    "Tcheaze'a",
-    "Nkouotchia",
-    "Ngahan'ha",
-    "Ncheazeme",
-    "Nzemezeme",
-    "Njyonze",
-    "Metuaze",
-  ],
-
-  Batchingou: [
-    "N'dimkock",
-    "N'tassia",
-    "N'geudjou",
-    "N'dinkap",
-    "Nzegeu",
-    "N'dintouo",
-    "N'zenjouo",
-    "N'zeleck ",
-  ],
-
-  Batié: [
-    "Lie'kouon",
-    "Temgou",
-    "Lie'djou",
-    "Cheptèh",
-    "Kwogouèh",
-    "Nzessouh",
-    "Djeudjeu'",
-    "Lie'gang",
-  ],
-
-  Batoufam: [
-    "Kouotchank",
-    "To'ossok",
-    "Ndjidjou",
-    "Lietswe",
-    "Kouotswe",
-    "Lietioh",
-    "Nzenze",
-    "Lietchak",
-  ],
-
-  Bayangam: [
-    "Sinsu",
-    "Gosue",
-    "Dzemto",
-    "Temgwe",
-    "Lipfe",
-    "Shanku'u",
-    "Dzedze",
-    "Tamdze",
-  ],
-
-  Dschang: [
-    "Mbouotchou",
-    "Efaa",
-    "Djielah",
-    "Ngan",
-    "Mbouowa",
-    "Mbouolo",
-    "Méta",
-    "Mbouokeu",
-  ],
-
-  Fotouni: [
-    "Lie'bong",
-    "Ngueussèh",
-    "Lie'gham",
-    "Nzeula'h",
-    "Nzeugou",
-    "Nzeusso",
-    "Ndjidjio'",
-    "Lie'lap",
-  ],
-
-  Fondjomakouet: [
-    "Liebong",
-    "Kapta",
-    "Liegwam",
-    "Zeula",
-    "Zeugou",
-    "Zeusseue",
-    "Djeudjeue",
-    "Liegang",
-  ],
-
-  Mbouda: [
-    "Cheatchie",
-    "Tcheaze'a",
-    "Nkouotchia",
-    "Ngahan'ha",
-    "Ncheazeme",
-    "Nzemezeme",
-    "Njyonze",
-    "Metuaze",    
-  ],
-
-  Ndu: [
-    "Ngang",
-    "Ntala",
-    "Sing",
-    "Lih",
-    "Nkapgny",
-    "Nyi",
-    "Mruyh",
-    "Nfung",
-    
-  ],
-
-  Féfé: [
-    "Lie'kwe'",
-    "Nkaatee",
-    "Ncwe'ko",
-    "Ncomtee",
-    "Nzingu",
-    "Nziso",
     "Ntu'kwa",
-    "Ntu'ntaa",    
+    "Nziso",
+    "Nzingu",
   ],
-
-  "Ghomala'": [
-    "Se'su'",
-    "Gôsu'ë",
-    "Nzemtô",
-    "Tangô",
-    "Tiepfô",
-    "Shieku'u",
-    "Dze'dze'",
-    "Tamze",    
-  ],
-
-  "Mboda'a": [
-    "Kateu",
-    "Kapot",
-    "Métagouè",
-    "Tsüre",
-    "Pobuo",
-    "Mota",
-    "Seugouè",
-    "Djeula",    
-  ],
-
-  Medûmba: [
-    "Nzinyam",
-    "Ntanbu'",
-    "Ntânte'",
-    "Ntanla'",
-    "Nsigha",
-    "Nsemte'",
-    "Nga",
-    "Nkôtu",    
-  ],
-
-  Mengaka: [
-    "Yentente",
-    "Yenkap",
-    "Yessi",
-    "Yenkossi",
-    "Yenkinze",
-    "Yièpié",
-    "Yenkopiè",
-    "Yengwiè",    
-  ],
-
-  "Ngiembo'on1": [
-    "Tcheatchiezea'a",
-    "Tchiezea'a",
-    "Nkouotchia",
-    "Ngahan'ha",
-    "Cheangahan'ha",
-    "Zemezeme",
-    "Madoungze",
-    "Metuanze",    
-  ],
-
-  "Ngiembo'on2": [
-    "Tcheatchie",
-    "Tcheazea'a",
-    "Nkouotchia",
-    "Ngahan'ha",
-    "Cheazeme",
-    "Zemezeme",
-    "Njyonze",
-    "Metuanze",    
-  ],
-
-  Nguemba: [
-    "Mumetè",
-    "Memetè",
-    "Kuèsit",
-    "Fessa",
-    "Fessap",
-    "Sheidah", 
-    "Duchu",
-    "Djedjùkù",    
-  ],
-
-  Yemba: [
-    "Bouotchou",
-    "Faa'",
+  Bafou: [
+    "Ngan",
     "Djielah",
+    "Effa",
+    "Mbouotchou", //0
+    "Mbouokeu",
+    "Me'ta",
+    "Mbouolo",
+    "Mbouowa",
+  ],
+  Bafoussam: [
+    "Dza' à Nlong",
+    "Dzemteh",
+    "Ghossaha",
+    "Seinchou", //0
+    "Tamdze",
+    "Dzedze",
+    "Shienku'u",
+    "Lecfo'o",
+  ],
+  Bagam: [
+    "Yenkessi",
+    "Yessi",
+    "Yenkap",
+    "Yentente", //0
+    "Yengwie'",
+    "Yenkopie'",
+    "Yepie'",
+    "Yenkinze",
+  ],
+  Baham: [
+    "Tamgwe",
+    "Mamto",
+    "Gosue",
+    "Kuogwe", //0
+    "Tamdze",
+    "Dzedze",
+    "Shanku'u",
+    "Liepfô",
+  ],
+  Bahouan: [
+    "Temgwe",
+    "Mamto",
+    "Gosue",
+    "Kuogwe", //0
+    "Tamdze",
+    "Dzedze",
+    "Shanku'u",
+    "Lipfe",
+  ],
+  Balengou: [
+    "Dikap",
+    "Nguedjou",
+    "Di'tcheu",
+    "Di'kong", //0
+    "Di'mbou",
+    "Zedjio",
+    "Di'keuh",
+    "Zegheu",
+  ],
+  Baloum: [
+    "Nga'ang",
+    "Djeulah",
+    "Fa'ah",
+    "Totsah", //0
+    "Metalou",
+    "Djeudjeu",
+    "Nzeundah",
+    "Bougwa'ah",
+  ],
+  Bamena: [
+    "Nguendjou",
+    "Ntassang",
+    "Li'nkong", //0ok
+    "Nzeleng",
+    "Nzedjio",
+    "Lih'tioh",
+    "Nzeugueuh",
+    "Lih'kap",
+  ],
+  Bamendjinda: [
+    "Tsüre",
+    "Metagoué",
+    "Kapot",
+    "kateu", //0
+    "Njeula",
+    "Seugouè",
+    "Meta",
+    "Pobuo",
+  ],
+  Bamendjou: [
+    "Pfessa",
+    "Kuitsit",
+    "Memete",
+    "Mumete", //0
+    "Djedjuku'u",
+    "Ndunshu",
+    "Nshyenda",
+    "Pfessap",
+  ],
+  Bamenyam: [
+    "Bikak",
+    "Binewa",
+    "Bissiène",
+    "Bizeu", //0
+    "Bisset",
+    "Bifoutgou",
+    "Bikuit",
+    "Bièbeu",
+  ],
+  Bandenkop: [
+    "Cheptèh",
+    "Lie'djou",
+    "Temgou",
+    "Lie'kouon", //0
+    "Lie'gang",
+    "Djeudjeu'",
+    "Nzessouh",
+    "Kwogouèh",
+  ],
+  Bandjoun: [
+    "Ntamgo",
+    "Dzemto",
+    "Gossue",
+    "Sêdzu", //0
+    "Ntamdze",
+    "Dzedze",
+    "Shyenku'u",
+    "Tye'pfô",
+  ],
+  Bangangté: [
+    "Ntanla'",
+    "Ntânte'",
+    "Ntanbu'",
+    "Nzinyam", //0
+    "Nkôtu",
+    "Nga",
+    "Nsemte'",
+    "Nsigha",
+  ],
+  Bangou: [
+    "Ndi'nkapC",
+    "Nguédjou",
+    "Tabété",
+    "Ndi'nkong", //0
+    "Nzeleng",
+    "Nzedjouoh",
+    "Nditouoh",
+    "Nzeugheu",
+  ],
+  Bangoua: [
+    "Lie Tsoue",
+    "Ngue Jou",
+    "Nto'o Sak",
+    "Lie Kouo", //0
+    "Lie Tchak",
+    "Nze Nze",
+    "Lie Ntio",
+    "Lie Chak",
+  ],
+  Bansoua: [
+    "Pfessa",
+    "Kuitsit",
+    "Memete",
+    "Mumete", //0
+    "Djedjuku'u",
+    "Ndunshu",
+    "Nshyenda",
+    "Pfessap",
+  ],
+  Batcham: [
+    "Ngahan'ha",
+    "Nkouotchia",
+    "Tcheaze'a",
+    "Cheatchie", //0
+    "Metuaze",
+    "Njyonze",
+    "Nzemezeme",
+    "Ncheazeme",
+  ],
+  Batchingou: [
+    "N'dinkap",
+    "N'geudjou",
+    "N'tassia",
+    "N'dimkock", //0
+    "N'zeleck",
+    "N'zenjouo",
+    "N'dintouo",
+    "Nzegeu",
+  ],
+  Batié: [
+    "Cheptèh",
+    "Lie'djou",
+    "Temgou",
+    "Lie'kouon", //0
+    "Lie'gang",
+    "Djeudjeu'",
+    "Nzessouh",
+    "Kwogouèh",
+  ],
+  Batoufam: [
+    "Lietswe",
+    "Ndjidjou",
+    "To'ossok",
+    "Kouotchank",//0
+    "Lietchak",
+    "Nzenze",
+    "Lietioh",
+    "Kouotswe",
+  ],
+  Bayangam: [
+    "Temgwe",
+    "Dzemto",
+    "Gosue",
+    "Sinsu", //0
+    "Tamdze",
+    "Dzedze",
+    "Shanku'u",
+    "Lipfe",
+  ],
+  Dschang: [
+    "Ngan",
+    "Djielah",
+    "Efaa",
+    "Mbouotchou",//0
+    "Mbouokeu",
+    "Méta",
+    "Mbouolo",
+    "Mbouowa",
+  ],
+  Fotouni: [
+    "Nzeula'h",
+    "Lie'gham",
+    "Ngueussèh",
+    "Lie'bong", //0
+    "Lie'lap",
+    "Ndjidjio'",
+    "Nzeusso",
+    "Nzeugou",
+  ],
+  Fondjomakouet: [
+    "Zeula",
+    "Liegwam",
+    "Kapta",
+    "Liebong", //0
+    "Liegang",
+    "Djeudjeue",
+    "Zeusseue",
+    "Zeugou",
+  ],
+  Mbouda: [
+    "Ngahan'ha",
+    "Nkouotchia",
+    "Tcheaze'a",
+    "Cheatchie", //0
+    "Metuaze",
+    "Njyonze",
+    "Nzemezeme",
+    "Ncheazeme",
+  ],
+  Ndu: [
+    "Lih",
+    "Sing",
+    "Ntala",
+    "Ngang",//0
+    "Nfung",
+    "Mruyh",
+    "Nyi",
+    "Nkapgny",
+  ],
+  Féfé: [
+    "Ncomtee",
+    "Ncwe'ko",
+    "Nkaatee",
+    "Lie'kwe'",//0,
+    "Ntu'ntaa",
+    "Ntu'kwa",
+    "Nziso",
+    "Nzingu",
+  ],
+  "Ghomala'": [
+    "Tangô",
+    "Nzemtô",
+    "Gôsu'ë",
+    "Se'su'",//0
+    "Tamze",
+    "Dze'dze'",
+    "Shieku'u",
+    "Tiepfô",
+  ],
+  "Mboda'a": [
+    "Tsüre",
+    "Métagouè",
+    "Kapot",
+    "Kateu",//0
+    "Djeula",
+    "Seugouè",
+    "Mota",
+    "Pobuo",
+  ],
+  Medûmba: [
+    "Ntanla'",
+    "Ntânte'",
+    "Ntanbu'",
+    "Nzinyam",//0
+    "Nkôtu",
+    "Nga",
+    "Nsemte'",
+    "Nsigha",
+  ],
+  Mengaka: [
+    "Yenkossi",
+    "Yessi",
+    "Yenkap",
+    "Yentente",//0
+    "Yengwiè",
+    "Yenkopiè",
+    "Yièpié",
+    "Yenkinze",
+  ],
+  "Ngiembo'on1": [
+    "Ngahan'ha",
+    "Nkouotchia",
+    "Tchiezea'a",
+    "Tcheatchiezea'a",//0
+    "Metuanze",
+    "Madoungze",
+    "Zemezeme",
+    "Cheangahan'ha",
+  ],
+  "Ngiembo'on2": [
+    "Ngahan'ha",
+    "Nkouotchia",
+    "Tcheazea'a",
+    "Tcheatchie",//0
+    "Metuanze",
+    "Njyonze",
+    "Zemezeme",
+    "Cheazeme",
+  ],
+  Nguemba: [
+    "Fessa",
+    "Kuèsit",
+    "Memetè",
+    "Mumetè",//0
+    "Djedjùkù",
+    "Duchu",
+    "Sheidah",
+    "Fessap",
+  ],
+  Yemba: [
     "Ngaan",
-    "Bouowoa",
-    "Bouolo",
+    "Djielah",
+    "Faa'",
+    "Bouotchou",//0
+    "Bouokeu",
     "Metaa",
-    "Bouokeu",    
+    "Bouolo",
+    "Bouowoa",
   ],
 };
 
 function translateDateToPidgin(dateString, dialect) {
   const [day, month, year] = dateString.split("-").map((num) => parseInt(num));
-  const dateObj = new Date(year, month - 1, day);
+  const dateObj = new Date(year, month - 2, day);
   const weekDay = pidginWeekDays[dialect][dateObj.getDay()];
   return `${weekDay}, ${day}-${month}-${year}`;
 }
